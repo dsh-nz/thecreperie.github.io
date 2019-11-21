@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The Creperie - The First Fast-Casual Creperie in Christchurch</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="images/fav.png">
+	
+	<link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+
+	<script src="https://kit.fontawesome.com/76449bf894.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.2.0/jquery.rateyo.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.1.0/css/ol.css" type="text/css">
+</head>
+
+<!-- Start Modal Area -->
+	<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+		  
+			<!-- Modal Header -->
+			<div class="modal-header">
+			  <h4 class="modal-title w-100 text-center">Tell Us Your Experience</h4>
+			  <button type="button" class="close" data-dismiss="modal">×</button>
+			</div>
+			
+			<!-- Modal Body -->
+			<div class="modal-body">
+			<div class="modal-body mx-3">
+				<div class="md-form mb-0">
+					<label style="display:inline-block;" for="input-1" class="control-label">Choose your avatar: </label>
+					<div id="avatars">
+							<form>
+							<label class="avatars">
+								<input type="radio" name="avatar"/>
+								<img src="images/avatar1.png" alt=""/>
+							</label>
+							<label class="avatars">
+								<input type="radio" name="avatar"/>
+								<img src="images/avatar2.png" alt=""/>
+							</label>
+							<label class="avatars">
+								<input type="radio"name="avatar"/>
+								<img src="images/avatar3.png" alt=""/>
+							</label>
+							</form>
+					</div>
+				</div>
+				<div class="md-form mb-0">
+					<input type="text" id="nameForm" class="form-control" required>
+					<label data-error="wrong" data-success="right" for="nameForm">Your name</label>
+				</div>
+				<div class="md-form mb-0">
+					<input type="email" id="defaultForm-email" class="form-control" required>
+					<label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
+				</div>
+				<div class="md-form mb-0">
+					<textarea type="text" id="reviewForm" class="md-textarea form-control" required rows="3"></textarea>
+					<label data-error="wrong" data-success="right" for="reviewForm">Your review</label>
+				</div>
+				<div class="md-form mb-0">
+					<label style="display:inline-block;" for="input-1" class="control-label">Rate Us</label>
+					<div data-rateyo-half-star="true" style="display:inline-block;" id="rateYo"></div>
+				</div>
+			</div>
+			</div>
+			
+			<!-- Modal Footer -->
+			<div class="modal-footer form-group">
+			  <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+			</div>
+
+		  </div>
+		</div>
+	</div>
+<!-- End Modal Area -->
+
+  <body>
+
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v5.0"></script>
+
+	<!-- Start Pre-Header Area -->
+    <div class="py-1 bg-black top">
+    	<div class="container">
+    		<div class="d-flex justify-content-center">	
+				<div class="p-2">Riverside Market, 96 Oxford Terrace, Christchurch, New Zealand
+				</div>
+	    		<div class="p-2"><b>Monday - Saturday</b> | 9am - 6pm
+				</div>
+				<div class="p-2"><b>Sunday</b> | 9am - 4pm
+				</div>
+		    </div>
+		  </div>
+    </div>
+	<!-- End Pre-Header Area -->
+
+	<!-- Start Header Area -->
+	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+			<a class="navbar-brand" href="index.html">
+				<img src="images/logo.png" alt="logo">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	        	<li class="nav-item active"><a href="#home" class="nav-link">Home</a></li>
+				<li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+				<li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+	        	<li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+	        	<li class="nav-item"><a href="#review" class="nav-link">Review</a></li>
+				<li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+				<li class="nav-item cta"><a href="#reservation" class="nav-link">Book Your Function</a></li>
+	        </ul>
+	      </div>
+	    </div>
+		<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">                
+                <li class="ftco-animate"><a href="https://www.facebook.com/TheCreperie.chch/" target="_blank"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.instagram.com/the.creperie/?hl=en" target="_blank"><span class="icon-instagram"></span></a></li>
+        </ul>
+	  </nav>
+	<!-- End Header Area -->
+
+	<!-- Start Banner Area -->
+    <section class="home-slider owl-carousel js-fullheight" id="home">
+		<div class="slider-item js-fullheight video-container">
+			<video autoplay muted loop id="myVideo">
+				<source src="images/thecreperie.mp4" type="video/mp4">
+				Your browser does not support HTML5 video.
+			</video>
+			<div class="overlay-desc slider-text">
+				<div class="row">
+					<div>
+						<h4 class="subheading1 animated swing">the</h4>
+						<h1 class="subheading animated swing">creperie</h1>
+						<h1>The First Fast-Casual Creperie in Christchurch</h1>
+					</div>											
+				</div>
+			
+			</div>
+		</div> 
+    </section>
+	<!-- End Banner Area -->
+
+	<!-- Start About Area -->
+	<section class="ftco-section ftco-wrap-about" id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5 wrap-about pt-5 pt-md-5 pb-md-3 ftco-animate">
+				  <div class="heading-section mb-4 my-5 my-md-0">
+					<span class="subheading">About</span>
+					<h2 class="mb-4">the creperie</h2>
+				  </div>
+					<p>Located in the Riverside Market, <b>the creperie</b> will be the first fast-casual creperie in Christchurch.
+					We are excited to delight you with the best sweet and savory crepes made to order with love. 
+					We invite you to come and enjoy something truly unique! 		  
+					</p>
+				</div>
+				<div class="col-md-7 d-flex">
+					<div class="img img-1 mr-md-2" style="background-image: url(images/about.jpg);"></div>
+					<div class="img img-2 ml-md-2" style="background-image: url(images/about-1.jpg);"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section bg-light">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-2">
+			  <div class="col-md-12 text-center heading-section ftco-animate">
+				<span class="subheading">the creperie</span>
+				<h2 class="mb-4">Our Service</h2>
+			  </div>
+			</div>
+		<div class="row">
+		  <div class="col-md-4 d-flex align-self-stretch ftco-animate text-center">
+			<div class="media block-6 services d-block">
+			  <div class="icon d-flex justify-content-center align-items-center">
+					<img class="img-fluid" src="images/d1.png" alt="market">
+			  </div>
+			  <div class="media-body p-2 mt-3">
+				<h3 class="heading">Riverside Market</h3>
+				<p><b>the creperie</b> is located in an exciting new development consisting of a 7-day-trading indoor farmers' market, boutique retail, restaurants, cafes & bars.</p>	
+			  </div>
+			</div>      
+		  </div>
+		  <div class="col-md-4 d-flex align-self-stretch ftco-animate text-center">
+			<div class="media block-6 services d-block">
+			  <div class="icon d-flex justify-content-center align-items-center">
+					<img class="img-fluid" src="images/d2.png" alt="crepes">
+			  </div>
+			  <div class="media-body p-2 mt-3">
+				<h3 class="heading">Premium Ingredients</h3>
+				<p><b>the creperie</b> uses only high quality prime sweet or savory ingredients from local suppliers that are sure to deliver perfect light and fluffy crepes every time.</p>
+			  </div>
+			</div>    
+		  </div>
+		  <div class="col-md-4 d-flex align-self-stretch ftco-animate text-center">
+			<div class="media block-6 services d-block">
+			  <div class="icon d-flex justify-content-center align-items-center">
+					<img class="img-fluid" src="images/d3.png" alt="chef">
+			  </div>
+			  <div class="media-body p-2 mt-3">
+				<h3 class="heading">Core Values</h3>
+				<p><b>the creperie</b> takes a modern approach to fast-casual dining, combining excellence in taste with fast service and unique atmosphere.</p>
+			  </div>
+			</div>      
+		  </div>
+		</div>
+		<div class="row justify-content-center mb-5 pb-2">
+			<div class="col-md-12 text-center heading-section ftco-animate">
+			  <h4 class="mb-5 mt-5">Check out the inspiring story of <b>the creperie</b>'s owner below:</h4>
+			  <a href="https://www.stuff.co.nz/life-style/food-wine/117153207/young-entrepreneur-cracks-it-big-with-humming-riverside-market-stall" target="_blank">
+				<img border="0" alt="Story on Stuff" id="stuff" src="images/stuff.png" width="220" height="91">
+			  </a>
+			</div>
+		</div>
+		</div>
+	</section>
+	<!-- End About Area -->
+
+	<!-- Start Gallery Area -->
+	<section class="ftco-section" id="gallery">
+		<div class="container">
+				<div class="row no-gutters justify-content-center mb-5 pb-2">
+						<div class="col-md-12 text-center heading-section ftco-animate">
+							<span class="subheading">Photo & Video</span>
+						<h2 class="mb-4">Gallery</h2>
+						</div>
+				</div>
+		<div class="photograhy">
+			<div class="row no-gutters">
+				<div class="col-md-4 ftco-animate">
+					<a href="images/gallery1.jpg" class="photography-entry img image-popup d-flex justify-content-center align-items-center" style="background-image: url(images/gallery1.jpg);">
+						<div class="overlay"></div>
+						<div class="text text-center">
+							<h3>Photo 1</h3>
+							<span class="tag"><b>the creperie</b> Cafe</span>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 ftco-animate">
+					<a href="images/gallery2.jpg" class="photography-entry img image-popup d-flex justify-content-center align-items-center" style="background-image: url(images/gallery2.jpg);">
+						<div class="overlay"></div>
+						<div class="text text-center">
+							<h3>Photo 2</h3>
+							<span class="tag">Crepe Making</span>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 ftco-animate">
+					<a href="images/gallery3.jpg" class="photography-entry img image-popup d-flex justify-content-center align-items-center" style="background-image: url(images/gallery3.jpg);">
+						<div class="overlay"></div>
+						<div class="text text-center">
+							<h3>Photo 3</h3>
+							<span class="tag">Ferrero Rocher Crepe</span>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 ftco-animate">
+					<a href="images/gallery4.jpg" class="photography-entry img image-popup d-flex justify-content-center align-items-center" style="background-image: url(images/gallery4.jpg);">
+						<div class="overlay"></div>
+						<div class="text text-center">
+							<h3>Photo 4</h3>
+							<span class="tag">From a Humble Beginning</span>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 ftco-animate">
+					<a href="images/gallery5.jpg" class="photography-entry img image-popup d-flex justify-content-center align-items-center" style="background-image: url(images/gallery5.jpg);">
+						<div class="overlay"></div>
+						<div class="text text-center">
+							<h3>Photo 5</h3>
+							<span class="tag">The Spark of Central Christchurch</span>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 ftco-animate">
+					<a href="images/gallery6.jpg" class="photography-entry img image-popup d-flex justify-content-center align-items-center" style="background-image: url(images/gallery6.jpg);">
+						<div class="overlay"></div>
+						<div class="text text-center">
+							<h3>Photo 6</h3>
+							<span class="tag">Christchurch's Best Food Market</span>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 ftco-animate">
+					<a href="images/gallery7.jpg" class="photography-entry img image-popup d-flex justify-content-center align-items-center" style="background-image: url(images/gallery7.jpg);">
+						<div class="overlay"></div>
+						<div class="text text-center">
+							<h3>Photo 7</h3>
+							<span class="tag">Bringing the 'buzz' back</span>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 ftco-animate">
+					<a href="images/gallery8.png" class="photography-entry img image-popup d-flex justify-content-center align-items-center" style="background-image: url(images/gallery8.png);">
+						<div class="overlay"></div>
+						<div class="text text-center">
+							<h3>Photo 8</h3>
+							<span class="tag">The Sketch</span>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 ftco-animate">
+					<a href="images/gallery9.jpg" class="photography-entry img image-popup d-flex justify-content-center align-items-center" style="background-image: url(images/gallery9.jpg);">
+						<div class="overlay"></div>
+						<div class="text text-center">
+							<h3>Photo 9</h3>
+							<span class="tag">Savory and Sweet</span>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 ftco-animate">
+					<a href="images/gallery10.mp4" class="photography-entry img image-popup d-flex justify-content-center align-items-center" style="background-image: url(images/gallery10.jpg);">
+						<div class="overlay"></div>
+						<div class="text text-center">
+							<h3>Video 1</h3>
+							<span class="tag">Stuff.co.nz's Coverage</span>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 ftco-animate">
+					<a href="images/gallery11.jpg" class="photography-entry img image-popup d-flex justify-content-center align-items-center" style="background-image: url(images/gallery11.jpg);">
+						<div class="overlay"></div>
+						<div class="text text-center">
+							<h3>Video 2</h3>
+							<span class="tag">TVNZ 1 Interview</span>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 ftco-animate">
+					<a href="images/gallery12.mp4" class="photography-entry img image-popup d-flex justify-content-center align-items-center" style="background-image: url(images/gallery12.jpg);">
+						<div class="overlay"></div>
+						<div class="text text-center">
+							<h3>Video 3</h3>
+							<span class="tag">Opening Soon Promo</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+	<!-- End Gallery Area -->
+
+	<!-- Start Menu Area -->
+    <section class="ftco-section" id="menu">
+    	<div class="container">
+	    	<div class="row no-gutters justify-content-center mb-5 pb-2">
+		          <div class="col-md-12 text-center heading-section ftco-animate">
+		          	<span class="subheading">Specialties</span>
+		            <h2 class="mb-4">Our Menu</h2>
+		          </div>
+	        </div>
+        <div class="ftco-search">
+			<div class="row">
+	            <div class="col-md-12 nav-link-wrap ">
+		            <div class="nav nav-pills  text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+		              <a class="nav-link ftco-animate active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">Savory</a>
+		              <a class="nav-link ftco-animate" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">Sweet</a>
+		              <a class="nav-link ftco-animate" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab" aria-controls="v-pills-3" aria-selected="false">Coffee</a>
+		              <a class="nav-link ftco-animate" id="v-pills-4-tab" data-toggle="pill" href="#v-pills-4" role="tab" aria-controls="v-pills-4" aria-selected="false">Tea</a>		              
+		            </div>
+		        </div>
+			<div class="col-md-12 tab-wrap">
+	        <div class="tab-content" id="v-pills-tabContent">
+				
+				<!-- Start Savory Area -->
+	            <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="day-1-tab">
+	              	<div class="row no-gutters d-flex align-items-stretch">
+						  <div class="row grid">
+							<div class="col-sm-4">
+							  <div class="item1">
+									<div class="flip-box justify-content-md-center">
+										<div class="flip-box-inner">
+											<div class="flip-box-front">
+											<img src="images/savory-1.jpg" alt="Ham">
+											</div>
+											<div class="flip-box-back centered">
+											<h2>Ham & Cheese</h2>
+											<p><span>Ham</span>, <span>Cheese</span>, <span>Butter</span></p>
+											</div>
+										</div>
+									</div>
+								<div class="p-inner">
+								  <h4>Ham & Cheese</h4>
+								  <div class="cat">$14</div>
+								</div>
+							  </div>
+							</div>
+							<div class="col-sm-4">
+							  <div class="item1">
+									<div class="flip-box">
+										<div class="flip-box-inner">
+											<div class="flip-box-front">
+											<img src="images/savory-2.jpg" alt="Salmon">
+											</div>
+											<div class="flip-box-back centered">
+											<h2>Salmon</h2>
+											<p><span>Smoked Salmon</span>, <span>Cheese</span>, <span>Tomatoe</span></p>
+											</div>
+										</div>
+									</div>
+								<div class="p-inner">
+								  <h4>Salmon</h4>
+								  <div class="cat">$16</div>
+								</div>
+							  </div>
+							</div>
+							<div class="col-sm-4">
+							  <div class="item1">
+									<div class="flip-box">
+										<div class="flip-box-inner">
+											<div class="flip-box-front">
+											<img src="images/savory-3.jpg" alt="Cheese">
+											</div>
+											<div class="flip-box-back centered">
+											<h2>Triple Cheese</h2>
+											<p><span>Ricotta</span>, <span>Mozzarella</span>, <span>Pecorino Cheese</span></p>
+											</div>
+										</div>
+									</div>
+								<div class="p-inner">
+								  <h4>Triple Cheese</h4>
+								  <div class="cat">$13</div>
+								</div>
+							  </div>
+							</div>
+							<div class="col-sm-4">
+							  <div class="item1">
+									<div class="flip-box">
+										<div class="flip-box-inner">
+											<div class="flip-box-front">
+											<img src="images/savory-4.jpg" alt="Vegetarian">
+											</div>
+											<div class="flip-box-back centered">
+											<h2>Vegetarian</h2>
+											<p><span>Spinach</span>, <span>Kale</span>, <span>Cheese</span></p>
+											</div>
+										</div>
+									</div>
+								<div class="p-inner">
+								  <h4>Vegetarian</h4>
+								  <div class="cat">$12</div>
+								</div>
+							  </div>
+							</div>
+							<div class="col-sm-4">
+							  <div class="item1">
+									<div class="flip-box">
+											<div class="flip-box-inner">
+												<div class="flip-box-front">
+												<img src="images/savory-5.jpg" alt="Mushroom">
+												</div>
+												<div class="flip-box-back centered">
+												<h2>Creamy Mushroom</h2>
+												<p><span>Mushroom</span>, <span>Cream Cheese</span>, <span>Cheddar Cheese</span></p>
+												</div>
+											</div>
+									</div>
+								<div class="p-inner">
+								<h4>Creamy Mushroom</h4>
+								<div class="cat">$15</div>
+								</div>
+							  </div>
+							</div>
+						  </div>
+					</div>
+	            </div>
+				<!-- End Savory Area -->
+				
+				<!-- Start Sweet Area -->
+	            <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-day-2-tab">
+	              	<div class="row no-gutters d-flex justify-content-md-cente">
+						<div class="row grid">
+							<div class="col-sm-4">
+								<div class="item1">
+									<div class="flip-box justify-content-md-center">
+										<div class="flip-box-inner">
+											<div class="flip-box-front">
+											<img src="images/sweet-1.jpg" alt="Nutella">
+											</div>
+											<div class="flip-box-back centered">
+											<h2>Nutella Banana</h2>
+											<p><span>Nutella</span>, <span>Banana</span>, <span>Icing Sugar</span></p>
+											</div>
+										</div>
+									</div>
+								<div class="p-inner">
+									<h4>Nutella Banana</h4>
+									<div class="cat">$12</div>
+								</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="item1">
+									<div class="flip-box">
+										<div class="flip-box-inner">
+											<div class="flip-box-front">
+											<img src="images/sweet-2.jpg" alt="Lemon">
+											</div>
+											<div class="flip-box-back centered">
+											<h2>Lemon & Sugar</h2>
+											<p><span>Freshly Squeezed Lemon Juice</span>, <span>Sugar</span></p>
+											</div>
+										</div>
+									</div>
+								<div class="p-inner">
+									<h4>Lemon & Sugar</h4>
+									<div class="cat">$10</div>
+								</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="item1">
+									<div class="flip-box">
+										<div class="flip-box-inner">
+											<div class="flip-box-front">
+											<img src="images/sweet-3.jpg" alt="Apple">
+											</div>
+											<div class="flip-box-back centered">
+											<h2>Apple Cinnamon</h2>
+											<p><span>Apple</span>, <span>Cinnamon</span>, <span>Brown Sugar</span></p>
+											</div>
+										</div>
+									</div>
+								<div class="p-inner">
+									<h4>Apple Cinnamon</h4>
+									<div class="cat">$13</div>
+								</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="item1">
+									<div class="flip-box">
+										<div class="flip-box-inner">
+											<div class="flip-box-front">
+											<img src="images/sweet-4.jpg" alt="Ferrero">
+											</div>
+											<div class="flip-box-back centered">
+											<h2>Ferrero Rocher Chocolate</h2>
+											<p><span>Ferrero Rocher</span>, <span>Icing Sugar</span>, <span>Chocolate Sauce</span></p>											</div>
+										</div>
+									</div>
+								<div class="p-inner">
+									<h4>Ferrero Rocher Chocolate</h4>
+									<div class="cat">$15</div>
+								</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="item1">
+									<div class="flip-box">
+											<div class="flip-box-inner">
+												<div class="flip-box-front">
+												<img src="images/sweet-5.jpg" alt="Oreo">
+												</div>
+												<div class="flip-box-back centered">
+												<h2>Oreo Cookie</h2>
+												<p><span>Oreo Cookie Biscuits</span>, <span>Icing Sugar</span>, <span>Cream</span></p>
+												</div>
+											</div>
+									</div>
+								<div class="p-inner">
+								<h4>Oreo Cookie</h4>
+								<div class="cat">$14</div>
+								</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="item1">
+									<div class="flip-box">
+											<div class="flip-box-inner">
+												<div class="flip-box-front">
+												<img src="images/sweet-6.jpg" alt="Mushroom">
+												</div>
+												<div class="flip-box-back centered">
+												<h2>Jam & Berries</h2>
+												<p><span>Strawberry Jam</span>, <span>Blueberry Jam</span></p>
+												</div>
+											</div>
+									</div>
+								<div class="p-inner">
+								<h4>Jam & Berries</h4>
+								<div class="cat">$13</div>
+								</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="item1">
+									<div class="flip-box">
+											<div class="flip-box-inner">
+												<div class="flip-box-front">
+												<img src="images/sweet-7.jpg" alt="Mushroom">
+												</div>
+												<div class="flip-box-back centered">
+												<h2>Just Nutella</h2>
+												<p><span>Lots of Nutella Spread</span>, <span>Chocolate Chip</span></p>
+												</div>
+											</div>
+									</div>
+								<div class="p-inner">
+								<h4>Just Nutella</h4>
+								<div class="cat">$11</div>
+								</div>
+								</div>
+							</div>	
+						</div>
+					</div>	
+				</div>	
+				<!-- End Sweet Area -->
+				
+				<!-- Start Coffee Area -->
+	            <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-day-3-tab">
+	              	<div class="row no-gutters d-flex justify-content-md-center">
+						<div class="row grid">
+							<div class="col-sm-4">
+								<div class="item2">
+									<img src="images/coffee-1.jpg" alt="Espresso">
+								<div class="p-inner">
+									<h4>Espresso</h4>
+									<div class="cat">$2.70</div>
+								</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="item2">
+									<img src="images/coffee-2.jpg" alt="Cappuccino">
+								<div class="p-inner">
+									<h4>Cappuccino</h4>
+									<div class="cat">$3.10</div>
+									<div class="cat">$3.70</div>
+								</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="item2">
+									<img src="images/coffee-3.jpg" alt="Long Black">
+								<div class="p-inner">
+									<h4>Long Black</h4>
+									<div class="cat">$3.10</div>
+								</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="item2">
+									<img src="images/coffee-4.jpg" alt="Latte">
+								<div class="p-inner">
+									<h4>Latte</h4>
+									<div class="cat">$3.10</div>
+									<div class="cat">$3.70</div>
+								</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="item2">
+									<img src="images/coffee-5.jpg" alt="Espresso Macchiato">
+								<div class="p-inner">
+								<h4>Espresso Macchiato</h4>
+								<div class="cat">$3.70</div>
+								</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="item2">
+									<img src="images/coffee-6.jpg" alt="Latte Macchiato">
+								<div class="p-inner">
+								<h4>Latte Macchiato</h4>
+								<div class="cat">$3.70</div>
+								</div>
+								</div>
+							</div>	
+						</div>
+				    </div>
+	            </div>
+				<!-- End Coffee Area -->
+				
+				<!-- Start Tea Area -->
+	            <div class="tab-pane fade" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-day-4-tab">
+	              	<div class="row d-flex justify-content-md-center tea-section">
+						<div class="row grid">
+							<div class="col-sm-4 pl-5 pr-5">
+								<div class="item2">
+									<img src="images/tea-1.jpg" alt="Black Tea">
+								<div class="p-inner">
+									<h4>Black Tea</h4>
+									<div class="cat">$3</div>
+								</div>
+								</div>
+							</div>
+							<div class="col-sm-4 pl-5 pr-5">
+								<div class="item2">
+									<img src="images/tea-2.jpg" alt="Green Tea">
+								<div class="p-inner">
+									<h4>Green Tea</h4>
+									<div class="cat">$3.50</div>
+								</div>
+								</div>
+							</div>
+							<div class="col-sm-4 pl-5 pr-5">
+								<div class="item2">
+									<img src="images/tea-3.jpg" alt="Fruit Tea">
+								<div class="p-inner">
+									<h4>Fruit Tea</h4>
+									<div class="cat">$4</div>
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Tea Area -->
+
+	        </div>
+	        </div>
+			</div>
+		</div>
+		</div>
+    </section>
+    <!-- End Menu Area -->
+		
+	<!-- Start Booking Area -->
+	<section class="ftco-section img" id="reservation" style="background-image: url(images/bg-1.jpg)" data-stellar-background-ratio="0.5">
+		<div class="container">
+		<div class="row d-flex">
+          <div class="col-md-7 ftco-animate makereservation p-4 px-md-5 pb-md-5">
+          	<div class="heading-section ftco-animate mb-5 text-center">
+	          	<span class="subheading">Reservation</span>
+	            <h2 class="mb-4">Book Your Function</h2>
+	        </div>
+            <form action="#">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="">Name</label>
+                    <input type="text" class="form-control" placeholder="Your Name" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="">Email</label>
+                    <input type="text" class="form-control" placeholder="Your Email" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="">Phone Number</label>
+                    <input type="text" class="form-control" placeholder="Your Phone Number" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="">Date</label>
+                    <input type="text" class="form-control" id="book_date" placeholder="Date" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="">Time</label>
+                    <input type="text" class="form-control" id="book_time" placeholder="Time" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="">Number of People</label>
+                    <div class="select-wrap one-third">
+                      <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                      <select name="" id="" class="form-control">
+                        <option value="">Person</option>
+                        <option value="">8</option>
+                        <option value="">9</option>
+                        <option value="">10</option>
+						<option value="">11</option>
+						<option value="">12+</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 mt-3">
+                  <div class="form-group text-center">
+                    <input type="submit" value="Book A Function" class="btn btn-primary py-3 px-5">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+		</div>
+	</section>
+	<!-- End Booking Area -->
+	
+	<!-- Start Review Area -->
+	<section class="ftco-section testimony-section img" id="review">
+	<div class="overlay"></div>
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-12 text-center heading-section ftco-animate">
+          	<span class="subheading">Reviews</span>
+            <h2 class="mb-4">Satisfied Crepe Lovers</h2>
+          </div>
+        </div>
+        <div class="row ftco-animate justify-content-center">
+          <div class="col-md-12">
+            <div class="carousel-testimony owl-carousel ftco-owl">
+              <div class="item">
+                <div class="testimony-wrap text-center pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/person_1.png)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text p-3">
+                    <p class="mb-4">The food is amazing savoury or sweet. Awesome friendly staff as well.</p>
+					<p class="name">Janet</p>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap text-center pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/person_2.png)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text p-3">
+                    <p class="mb-4">Beautiful food. Welcoming and accommodating staff. Relaxing atmosphere. Definitely coming back.</p>
+                    <p class="name">Jason</p>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap text-center pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/person_2.png)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text p-3">
+                    <p class="mb-4">Been a few times since the shop has opened and have not been dissapointed!</p>
+                    <p class="name">Leonard</p>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap text-center pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/person_1.png)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text p-3">
+                    <p class="mb-4">A taste of France in the middle of Christchurch.</p>
+                    <p class="name">Rose</p>
+                    <i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+		</div>
+		<div class="ftco-section-1 img-3" id="review" style="background-image: url(images/bg.jpg)" data-stellar-background-ratio="0.5">
+			<div class="container">
+			<div class="row d-flex justify-content-center py-xl-5">
+				<h2 class="h3 font-weight-bold">TELL US YOUR STORY!</h2>
+			</div>	
+			<div class="row d-flex justify-content-center">
+				<input class="btn btn-primary py-3 px-5" data-toggle="modal" data-target="#myModal" type="submit" value="Click Here To Review Us">
+			</div>
+		</div>
+		</div>
+	  </div>
+    </section>
+	<!-- End Review Area -->
+		
+	<!-- Start Contact Area -->
+	<section class="ftco-section ftco-no-pt ftco-no-pb contact-section" id="contact">
+	<div class="overlay"></div>
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-12 text-center heading-section ftco-animate">
+          	<span class="subheading">Contact Us</span>
+            <h2 class="mb-4">Questions?</h2>
+          </div>
+        </div>
+		<div class="row d-flex align-items-stretch no-gutters">
+			<div class="col-md-5 pt-5 px-2 pb-2 p-md-5 order-md-last">
+			<h2 class="h4 mb-2 mb-md-5 font-weight-bold">We'd love to hear from you.</h2>
+			<form action="#">
+			  <div class="form-group">
+				<input type="text" class="form-control" placeholder="Your Name" required>
+			  </div>
+			  <div class="form-group">
+				<input type="text" class="form-control" placeholder="Your Email" required>
+			  </div>
+			  <div class="form-group">
+				<input type="text" class="form-control" placeholder="Subject" required>
+			  </div>
+			  <div class="form-group">
+				<textarea name="" id="" cols="30" rows="4" class="form-control" required placeholder="Message"></textarea>
+			  </div>
+			  <div class="form-group">
+				<input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+			  </div>
+			</form>
+			</div>
+			<div class="col-md-7">
+				<div class="item">
+					<a class="image-link" href="images/map2.jpg">
+						<img src="images/map.jpg" alt="map">
+					</a>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	<div class="container ftco-info contact-section">
+		<div class="row d-flex contact-info">
+		  <div class="col-md-12 mb-4">
+			<h2 class="h4 font-weight-bold">Contact Information</h2>
+		  </div>
+		  <div class="w-100"></div>
+		  <div class="col-md-6 d-flex">
+			<div class="dbox">
+				<p><span>Address:</span> <b>Riverside Market</b>, 96 Oxford Terrace, Christchurch<br>New Zealand 8011</p>
+			</div>
+		  </div>
+		  <div class="col-md-6 d-flex">
+			<div class="dbox">
+				<p><span>Email:</span> <a href="mailto:info@yoursite.com">info@thecreperie.co.nz</a></p>
+			</div>
+		  </div>
+		</div>
+	</div>
+	</section>
+	<!-- End Contact Area -->
+	
+	<!-- Start Footer Area -->
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-2 col-lg-3">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Opening Hours</h2>
+              <ul class="list-unstyled open-hours">
+                <li class="d-flex"><span>Monday</span><span>9:00 - 6:00</span></li>
+                <li class="d-flex"><span>Tuesday</span><span>9:00 - 6:00</span></li>
+                <li class="d-flex"><span>Wednesday</span><span>9:00 - 6:00</span></li>
+                <li class="d-flex"><span>Thursday</span><span>9:00 - 6:00</span></li>
+                <li class="d-flex"><span>Friday</span><span>9:00 - 6:00</span></li>
+                <li class="d-flex"><span>Saturday</span><span>9:00 - 6:00</span></li>
+                <li class="d-flex"><span>Sunday</span><span> 9:00 - 4:00</span></li>
+              </ul>
+            </div>
+		  </div>
+		  <div class="col-md-5 col-lg-3">
+            <div class="ftco-footer-widget mb-4">
+				<a href="https://www.facebook.com/TheCreperie.chch/" target="_blank">
+					<i class="fab fa-facebook"></i>
+					<h2 class="ftco-heading-2">Facebook</h2>
+				</a>
+				<div class="fb-page" data-href="https://www.facebook.com/TheCreperie.chch/" target="_blank" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+					<blockquote cite="https://www.facebook.com/TheCreperie.chch/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/TheCreperie.chch/" target="_blank">Facebook</a></blockquote>
+				</div>
+            </div>
+          </div>
+          <div class="col-md-5 col-lg-3">
+            <div class="ftco-footer-widget mb-4">
+				<a href="https://www.instagram.com/the.creperie/?hl=en" target="_blank">
+					<i class="fab fa-instagram"></i>
+					<h2 class="ftco-heading-2">Instagram</h2>
+				</a>
+				<iframe src="http://lightwidget.com/widgets/3afbfb64895c5411948efa2b45371963.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+            </div>
+          </div>
+          <div class="col-md-3 col-lg-3">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Newsletter</h2>
+            	<p>Subscribe to our newsletter to get all updates about discount and offers.</p>
+				  <form action="#" class="subscribe-form">
+					<div class="form-group">
+					  <input class="form-control mb-2 text-center" placeholder="Enter Email" required="" type="email">
+					  <input type="submit" value="Subscribe" class="btn btn-primary form-control submit px-3">
+					</div>
+				  </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+	<!-- End Footer Area -->
+
+  <!-- Loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/review.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.2.0/jquery.rateyo.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.1.0/build/ol.js"></script>
+
+  </body>
+</html>
